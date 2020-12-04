@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   web:
-    image: ${IMAGE_NAME}
+    image: ${IMAGE_NAME}:${VERSION}
     container_name: noderedopc
     networks:
       - docker-compose-influxdb-grafana_default
