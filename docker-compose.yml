@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  web:
+    image: ${IMAGE_NAME}
+    container_name: noderedopc
+    networks:
+      - docker-compose-influxdb-grafana_default
+    ports:
+      - "1880:1880"
+    volumes:
+      - ${NODE_RED_HOME_DIR}:/data
+networks:
+  docker-compose-influxdb-grafana_default:
+    external: true
