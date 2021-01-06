@@ -3,12 +3,7 @@ services:
   web:
     image: ${IMAGE_NAME}:${VERSION}
     container_name: noderedopc
-    networks:
-      - influxdb-grafana_default
     ports:
       - "1880:1880"
     volumes:
       - ${NODE_RED_HOME_DIR}:/data
-networks:
-  influxdb-grafana_default:
-    external: true
