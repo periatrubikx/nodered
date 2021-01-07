@@ -23,12 +23,6 @@
                 "view-node-show-label": true,
                 "view-show-tips": true
             }
-        },
-        "git": {
-            "user": {
-                "name": "periatrubikx",
-                "email": "peri@rubikx.io"
-            }
         }
     }
 }

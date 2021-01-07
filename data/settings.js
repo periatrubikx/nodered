@@ -113,14 +113,14 @@ module.exports = {
     // -----------------
     // To password protect the Node-RED editor and admin API, the following
     // property can be used. See http://nodered.org/docs/security.html for details.
-    //adminAuth: {
-    //    type: "credentials",
-    //    users: [{
-    //        username: "admin",
-    //        password: "$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN.",
-    //        permissions: "*"
-    //    }]
-    //},
+    adminAuth: {
+        type: "credentials",
+        users: [{
+            username: "rubikx-admin",
+            password: "$2a$08$lUCEnSLvYdm.5x/mxZwEb.rnEt1F5P1jjQgQox96yd6xabxjoa5Qq",
+            permissions: "*"
+        }]
+    },
 
     // To password protect the node-defined HTTP endpoints (httpNodeRoot), or
     // the static content (httpStatic), the following properties can be used.
@@ -238,7 +238,6 @@ module.exports = {
         // os:require('os'),
         // jfive:require("johnny-five"),
         // j5board:require("johnny-five").Board({repl:false})
-        geohashModule:require('ngeohash')
     },
     // `global.keys()` returns a list of all properties set in global context.
     // This allows them to be displayed in the Context Sidebar within the editor.
@@ -289,9 +288,19 @@ module.exports = {
 
     // Customising the editor
     editorTheme: {
+        page: {
+            title: "RubikX-Edge",
+            favicon: "/data/images/logo.png"
+        },
+        
+        header: {
+            title: "RubikX Workflows",
+            image: "/data/images/logo.png"
+        },
+        
         projects: {
             // To enable the Projects feature, set this value to true
-            enabled: false
+            enabled: true
         }
     }
 }

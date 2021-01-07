@@ -2,15 +2,5 @@
     "name": "node-red-project",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "private": true,
-    "dependencies": {
-        "iont-node-red-contrib-aws-iot-hub": "~0.1.17",
-        "node-red-contrib-gpsd": "~1.0.2",
-        "node-red-contrib-influxdb": "~0.5.2",
-        "node-red-contrib-iot-virtual-device": "~0.1.3",
-        "node-red-contrib-lorawan": "0.0.4",
-        "node-red-contrib-opcua": "~0.2.89",
-        "node-red-contrib-ttn": "~2.0.5",
-        "node-red-node-geohash": "~0.1.9"
-    }
+    "private": true
 }
