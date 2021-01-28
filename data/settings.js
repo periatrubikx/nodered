@@ -115,11 +115,18 @@ module.exports = {
     // property can be used. See http://nodered.org/docs/security.html for details.
     adminAuth: {
         type: "credentials",
-        users: [{
-            username: "rubikx-admin",
-            password: "$2a$08$lUCEnSLvYdm.5x/mxZwEb.rnEt1F5P1jjQgQox96yd6xabxjoa5Qq",
-            permissions: "*"
-        }]
+        users: [
+            {
+                username: "rubikx-admin",
+                password: "$2a$08$Y4FANdit58hKK///JQ82MOH/OCsahVt8GsjcxsCRXaLM/Ci2Pr.tu",
+                permissions: "*"
+            },
+            {
+                username: "pratul",
+                password: "$2a$08$qmBlbYqO7Fdm3lW3UWT8UOPBupSuhae1aG1EWYWAOK/hZWeLyhkmW",
+                permissions: "*"
+            }
+        ]
     },
 
     // To password protect the node-defined HTTP endpoints (httpNodeRoot), or
@@ -294,10 +301,14 @@ module.exports = {
         },
         
         header: {
-            title: "RubikX Workflows",
+            title: "RubikX",
             image: "/data/images/logo.png"
         },
         
+        login: {
+            image: "/data/images/login-logo.jpg" // a 256x256 image
+        },
+
         projects: {
             // To enable the Projects feature, set this value to true
             enabled: true
