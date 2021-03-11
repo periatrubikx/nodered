@@ -1,1 +1,0 @@
-[{"id":"5d95d52c.751f1c","type":"function","z":"151399d6.e64456","name":"FURNACE_TEMPERATURE","func":"msg.payload={\n    \"name\":\"Boiler_Furnace_Temperature\",\n    \"temperature\":msg.payload\n};\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":974,"y":449,"wires":[["8a337e3c.4542d"]]}]
