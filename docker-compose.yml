@@ -2,8 +2,16 @@ version: '3.7'
 services:
   web:
     image: ${IMAGE_NAME}:${VERSION}
-    container_name: noderedopc
+    container_name: nodered
     ports:
       - "1880:1880"
     volumes:
-      - ${NODE_RED_HOME_DIR}:/data
+      - ./settings.js:/data/settings.js
+      - ./images:/data/images
+      - ./node_modules:/data/node_modules
+      - ./input:/data/input
+
+networks:
+  default:
+    external:
+      name: rubikx-iot-nw
